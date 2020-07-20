@@ -1,0 +1,9 @@
+h1 { color: #ffffff; font-size: 60px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+h2 { color: #ffffff; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+body { background-color: #161819; color: #f8f8f8; font-family: sans-serif; font-size: 21px; font-weight: 500; line-height: 32px; margin: 24px 24px; }
+
+a { color: #c8c8c8; text-decoration: none; }
+
+a:hover { color: #8EF2FF; }
