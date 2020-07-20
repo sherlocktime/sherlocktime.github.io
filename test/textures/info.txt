@@ -1,0 +1,1 @@
+texturas equirectangulares para el domo
