@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>prueba audio js</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<audio src="./audio/pigafetta_01.mp3" id="audio"></audio>
+<div style="font-size:200px; margin:auto; width:50%; text-align:center;">
+<div class="fa fa-play" id="boton" onclick="play()"></div>
+<p style="font-size:40px">PIGAFETTA</p>
+</div>
+
+<script>
+    function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+            $('#boton').removeClass('fa-play')
+            $('#boton').addClass('fa-pause')
+        }else{
+            audio.pause();
+            audio.currentTime = 0
+            $('#boton').addClass('fa-play')
+            $('#boton').removeClass('fa-pause')
+        }
+    }
+</script>
+
+</body>
+</html>
